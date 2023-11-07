@@ -1,0 +1,120 @@
+/* regra padrao para todo o CSS, por padrao tudo vai ter as definicoes abaixo a nao ser que seja especificado*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*tag body*/
+body {
+    background-color: #e7e7e7; /*cor de fundo do background na tag body*/
+    padding-top: 100px; /*espacamento de 100px com relacao ao topo*/
+}
+
+/*cabecalho*/
+header {
+    display: flex; /*elementos do cabecalho fiquem um ao lado do outro*/
+    align-items: center; /*elementos do cabecalho fiquem centralizados na vertical*/
+    margin-bottom: 40px; /*separar header do formulario*/
+}
+
+/*imagem do cabecalho*/
+header img {
+    height: 36px; /*tamanho da imagem 36px x 36px*/
+    margin-right: 16px; /*margem para a direita da imagem*/
+}
+
+/*fonte do cabecalho*/
+header h1 {
+    font-size: 40px; /*tamanho da fonte 40px*/
+    font-weight: bold; /*estilo da fonte*/
+}
+
+/*estilizacao do container*/
+.container {
+    max-width: 960px;
+    width: 100%; /*ocupara 100% da tela, ate 960px, fazendo com que o conteudo fique centralizado em todos os monitores*/
+    margin: 0 auto; /*centralizar o container na horizontal*/
+}
+
+/*estilizacao da tag form*/
+form {
+    display: flex; /*colocar elementos numa mesma posicao*/
+    max-width: 640px; /*area maxima para os elementos*/
+    width: 100%;
+    justify-content: space-between; /*distribuir espacamento entre os itens*/
+    margin-bottom: 56px;
+}
+
+/*estilizacao do botao da tag form*/
+form button{
+    background-color: #009432; /*cor do botao*/
+    color: #fff; /*cor do texto do botao*/
+    font-size: 24px; /*tamanho da fonte do botao*/
+    font-weight: bold;
+    border: none; /*remove borda do botao*/
+    cursor: pointer; /*icone da maozinha com indicador levantado quando passa o mouse por cima do botao*/
+    padding: 8px; /*espacamento entre os elementos*/
+}
+
+/*estilizacao dos campos da tag form*/
+form input {
+    font-size: 24px;
+    color: #000;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 8px; /*espacamento entre os elementos*/
+}
+
+/*estilizacao do cabecalho da tabela*/
+table th {
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*estilizacao da tabela*/
+table {
+    width: 100%; /*ocupa toda area do container*/
+}
+
+/*estilizacao da body tabela*/
+tbody td {
+    text-align: center; /*alinha o texto do body da tabela no centro-horizontal*/
+}
+
+/*estilizacao da rodape tabela*/
+tfoot td {
+    text-align: center; /*alinha o texto do rodape da tabela no centro-horizontal*/
+}
+
+table td {
+    text-align: center; /*alinha o texto de todos os td's tabela no centro-horizontal*/
+    font-size: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*estilizacao da imagem dentro da tag td da tabela*/
+table td img {
+    height: 30px;
+}
+
+/*estilo ao texto de aprovado e reprovado*/
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px; /*estilo de borda arredondada*/
+}
+
+.aprovado {
+    background-color: #009432; /*cor de fundo do resultado aprovado*/
+}
+
+.reprovado {
+    background-color: red; /*cor de fundo do resultado aprovado*/
+}
