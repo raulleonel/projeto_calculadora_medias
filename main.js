@@ -54,7 +54,7 @@ function atualizaTabela () {
 function atualizaMediaFinal () {
     const mediaFinal = calculaMediaFinal(); /* criada funcao que recebe o valor resultante do valor da funcao calculaMediaFinal */
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal; /* recebe o valor da mediaFinal no codigo HTML exibido no pagina */
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2); /* recebe o valor da mediaFinal no codigo HTML exibido no pagina */
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado; /* novamente o uso do operador TERNARIO para classificar a media */
 }
 
